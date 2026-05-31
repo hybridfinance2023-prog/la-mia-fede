@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>La mia fede</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20260531b" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>La mia fede</h1>
+    <p class="subtitle">Studio personale delle Scritture</p>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="bibbia" role="tab">Bibbia</button>
+    <button class="tab" data-tab="genealogia" role="tab">Genealogia</button>
+    <button class="tab" data-tab="sapienziali" role="tab">Sapienziali</button>
+    <button class="tab" data-tab="profeti" role="tab">Profeti</button>
+    <button class="tab" data-tab="dogmi" role="tab">Verità e dogmi</button>
+    <button class="tab" data-tab="misteri" role="tab">Misteri</button>
+    <button class="tab" data-tab="cammino" role="tab">Percorso</button>
+    <button class="tab" data-tab="gesu" role="tab">Studio di Gesù</button>
+    <button class="tab" data-tab="esplora" role="tab">Esplora</button>
+    <button class="tab" data-tab="diario" role="tab">Diario</button>
+    <button class="tab" data-tab="preferiti" role="tab">Preferiti</button>
+    <button class="tab" data-tab="domande" role="tab">Domande sulla fede</button>
+  </nav>
+
+  <main class="content">
+    <section id="bibbia" class="panel active"></section>
+    <section id="genealogia" class="panel"></section>
+    <section id="sapienziali" class="panel"></section>
+    <section id="profeti" class="panel"></section>
+    <section id="dogmi" class="panel"></section>
+    <section id="misteri" class="panel"></section>
+    <section id="cammino" class="panel"></section>
+    <section id="gesu" class="panel"></section>
+    <section id="esplora" class="panel"></section>
+    <section id="diario" class="panel"></section>
+    <section id="preferiti" class="panel"></section>
+    <section id="domande" class="panel"></section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Uso personale · Fonti: Bibbia CEI, Catechismo della Chiesa Cattolica · <strong>build&nbsp;8</strong></small>
+  </footer>
+
+  <script>
+    // Carica gli script in ordine, sempre freschi (evita cache stantia in sviluppo)
+    (function () {
+      var files = ['data.js', 'teaching.js', 'percorso.js', 'sapienziali.js', 'genealogia.js', 'domande.js', 'domande-extra.js', 'profeti.js', 'diffusione-capitali.js', 'studio/studio-data.js', 'studio-gesu-extra.js', 'misteri.js', 'versetti.js', 'app.js'];
+      var v = Date.now();
+      (function next(i) {
+        if (i >= files.length) return;
+        var s = document.createElement('script');
+        s.src = files[i] + '?v=' + v;
+        s.onload = function () { next(i + 1); };
+        document.body.appendChild(s);
+      })(0);
+    })();
+  </script>
+</body>
+</html>
