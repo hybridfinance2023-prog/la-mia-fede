@@ -1062,8 +1062,10 @@ function renderReader(panel) {
   const secEl = h('section', { class: 'teaching-section reader-section' });
   secEl.appendChild(h('h3', {}, section.title));
   if (section.subtitle) secEl.appendChild(h('p', { class: 'section-sub' }, section.subtitle));
-  secEl.appendChild(h('div', { class: 'teaching-body', html: section.html }));
+  const tbody = h('div', { class: 'teaching-body', html: section.html });
+  secEl.appendChild(tbody);
   panel.appendChild(secEl);
+  if (typeof linkVersetti === 'function') linkVersetti(tbody);
 
   // Navigazione inferiore
   const nav = h('div', { class: 'reader-nav' });
@@ -1123,7 +1125,7 @@ function linkVersetti(rootEl) {
   const nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
   nodes.forEach(node => {
-    if (node.parentElement && node.parentElement.closest('.vref, a, button')) return;
+    if (node.parentElement && node.parentElement.closest('.vref, a, button, .pf-vers, .ms-vers, .rif, .meta, .pf-meta-pill, .study-facts, .cov-meta, .sgx-ins')) return;
     const txt = node.nodeValue;
     re.lastIndex = 0;
     if (!re.test(txt)) return;
@@ -1142,6 +1144,13 @@ function linkVersetti(rootEl) {
     if (last < txt.length) frag.appendChild(document.createTextNode(txt.slice(last)));
     node.parentNode.replaceChild(frag, node);
   });
+}
+
+// Applica i versetti cliccabili ai contenitori di testo di un pannello
+function linkVersettiPanel(panelOrId) {
+  const root = typeof panelOrId === 'string' ? document.getElementById(panelOrId) : panelOrId;
+  if (!root || typeof linkVersetti !== 'function') return;
+  root.querySelectorAll('.pf-body-in, .ms-in, .sgx-parab, .sgx-ev, .teaching-body, .faq-a-inner').forEach(el => linkVersetti(el));
 }
 
 function showVersettoPopover(refEl) {
@@ -1432,6 +1441,8 @@ renderEsplora();
 renderDiario();
 renderPreferiti();
 renderDomande();
-if (typeof renderProfeti === 'function') renderProfeti('profeti');
-if (typeof renderMisteri === 'function') renderMisteri('misteri');
+if (typeof renderProfeti === 'function') { renderProfeti('profeti'); linkVersettiPanel('profeti'); }
+if (typeof renderMisteri === 'function') { renderMisteri('misteri'); linkVersettiPanel('misteri'); }
+linkVersettiPanel('gesu');
+linkVersettiPanel('domande');
 renderBibbia();
