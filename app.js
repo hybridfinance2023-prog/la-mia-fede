@@ -354,7 +354,7 @@ function salmiConcettiHTML() {
     html += `<h4>${theme.concept}</h4>`;
     html += `<p>${theme.description}</p>`;
     html += '<div class="psalm-list">';
-    theme.psalms.forEach(n => { html += `<span class="psalm-chip">Sal ${n}</span>`; });
+    theme.psalms.forEach(n => { html += `<button type="button" class="psalm-chip" data-salmo="${n}">Sal ${n}</button>`; });
     html += '</div>';
     theme.connections.forEach(c => { html += `<div class="connection">${c.text}</div>`; });
     html += '</div>';
@@ -1173,12 +1173,50 @@ function showVersettoPopover(refEl) {
   pop.classList.add('show');
 }
 
-// Carte interattive "tocca per scoprire" + versetti cliccabili (event delegation)
+// Apre un Salmo intero in italiano (Bibbia Riveduta, via getbible.net)
+const SALMI_CACHE = {};
+function apriSalmo(n) {
+  let overlay = document.getElementById('salmo-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'salmo-overlay';
+    overlay.className = 'salmo-overlay';
+    overlay.addEventListener('click', ev => { if (ev.target === overlay) overlay.classList.remove('show'); });
+    document.body.appendChild(overlay);
+  }
+  overlay.innerHTML = '<div class="salmo-modal"><button class="salmo-close" type="button" aria-label="Chiudi">×</button>'
+    + `<div class="salmo-content"><p class="salmo-loading">Carico il Salmo ${n}…</p></div></div>`;
+  overlay.classList.add('show');
+  overlay.querySelector('.salmo-close').addEventListener('click', () => overlay.classList.remove('show'));
+  const content = overlay.querySelector('.salmo-content');
+
+  const render = data => {
+    let h = '<div class="salmo-step">Salmi · Bibbia Riveduta (1927)</div>'
+      + `<h3 class="salmo-title">Salmo ${n}</h3><div class="salmo-verses">`;
+    (data.verses || []).forEach(v => { h += `<p><span class="vn">${v.verse}</span>${escHtml(v.text)}</p>`; });
+    h += '</div>';
+    content.innerHTML = h;
+    content.scrollTop = 0;
+  };
+
+  if (SALMI_CACHE[n]) { render(SALMI_CACHE[n]); return; }
+  fetch(`https://api.getbible.net/v2/riveduta/19/${n}.json`)
+    .then(r => r.json())
+    .then(d => { SALMI_CACHE[n] = d; render(d); })
+    .catch(() => { content.innerHTML = `<p class="salmo-loading">Impossibile caricare il Salmo ${n}. Controlla la connessione e riprova.</p>`; });
+}
+
+// Carte interattive "tocca per scoprire" + versetti + salmi cliccabili (event delegation)
 document.addEventListener('click', e => {
+  const chip = e.target.closest('.psalm-chip[data-salmo]');
+  if (chip) { apriSalmo(chip.dataset.salmo); return; }
   const vref = e.target.closest('.vref');
   if (vref) { e.stopPropagation(); showVersettoPopover(vref); return; }
   const card = e.target.closest('.word-card');
   if (card) card.classList.toggle('revealed');
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { const o = document.getElementById('salmo-overlay'); if (o) o.classList.remove('show'); }
 });
 document.addEventListener('keydown', e => {
   if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('word-card')) {
