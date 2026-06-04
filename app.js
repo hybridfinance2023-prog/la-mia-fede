@@ -1117,10 +1117,16 @@ function renderCammino() {
 
 // ---- Versetti cliccabili: rende i riferimenti dei link e mostra il testo ----
 function linkVersetti(rootEl) {
-  if (typeof VERSETTI === 'undefined' || !rootEl) return;
-  const keys = Object.keys(VERSETTI).sort((a, b) => b.length - a.length);
+  if (!rootEl) return;
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const re = new RegExp('(' + keys.map(esc).join('|') + ')(?![\\w,\\-])', 'g');
+  // Riconosce QUALSIASI riferimento "Libro cap,vers" dei libri conosciuti
+  const books = ((typeof LIBRI_NUM !== 'undefined') ? Object.keys(LIBRI_NUM) : [])
+    .concat(['Sap', 'Sir', 'Bar', 'Tb', 'Gdt', '1 Mac', '2 Mac'])
+    .sort((a, b) => b.length - a.length);
+  let re;
+  try {
+    re = new RegExp('\\b((?:' + books.map(esc).join('|') + ')\\s+\\d+,\\d+(?:-\\d+)?)(?!\\d)', 'g');
+  } catch (e) { return; }
   const walker = document.createTreeWalker(rootEl, NodeFilter.SHOW_TEXT);
   const nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
