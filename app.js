@@ -299,6 +299,23 @@ function renderSapienzialeDetail(panel) {
     panel.appendChild(grid);
   }
 
+  // Indice di TUTTI i capitoli del libro (testo italiano)
+  const info = (typeof LIBRO_INFO !== 'undefined') ? LIBRO_INFO[book.name] : null;
+  if (info) {
+    const capWrap = h('div', { class: 'cap-wrap' });
+    capWrap.appendChild(h('h3', { class: 'block-title' }, `Leggi tutti i capitoli (${info.chapters} · testo italiano)`));
+    capWrap.appendChild(h('p', { class: 'cap-hint' }, 'Tocca un capitolo per aprirlo e consultarlo (Bibbia Riveduta 1927).'));
+    const cgrid = h('div', { class: 'cap-grid' });
+    for (let c = 1; c <= info.chapters; c++) {
+      cgrid.appendChild(h('button', {
+        type: 'button', class: 'cap-chip',
+        'data-num': info.num, 'data-chap': c, 'data-book': book.name
+      }, String(c)));
+    }
+    capWrap.appendChild(cgrid);
+    panel.appendChild(capWrap);
+  }
+
   // Subnav a salti
   const subnav = h('nav', { class: 'teaching-subnav' });
   studio.sections.forEach((s, i) => {
@@ -1196,6 +1213,15 @@ const LIBRI_NUM = {
 };
 const CHAP_CACHE = {};
 
+// Libri con indice capitoli consultabile (presenti nella Riveduta)
+const LIBRO_INFO = {
+  "Proverbi": { num: 20, chapters: 31 },
+  "Giobbe": { num: 18, chapters: 42 },
+  "Salmi": { num: 19, chapters: 150 },
+  "Qoèlet (Ecclesiaste)": { num: 21, chapters: 12 },
+  "Cantico dei Cantici": { num: 22, chapters: 8 }
+};
+
 function parseRef(ref) {
   const m = String(ref).match(/^(.+?)\s+(\d+),(\d+)(?:-(\d+))?$/);
   if (!m) return null;
@@ -1240,6 +1266,18 @@ function apriSalmo(n) {
   }).catch(() => { content.innerHTML = `<p class="salmo-loading">Impossibile caricare il Salmo ${n}. Controlla la connessione.</p>`; });
 }
 
+// Apre un capitolo intero (dall'indice dei capitoli)
+function apriCapitolo(num, chap, label) {
+  const content = openBibleModal(`Carico ${escHtml(label || ('capitolo ' + chap))}…`);
+  fetchChapterIT(num, chap).then(data => {
+    let h = `<div class="salmo-step">${escHtml(label || '')} · Bibbia Riveduta (1927)</div>`
+      + `<h3 class="salmo-title">${escHtml(data.name || label || ('Capitolo ' + chap))}</h3><div class="salmo-verses">`;
+    (data.verses || []).forEach(v => { h += `<p><span class="vn">${v.verse}</span>${escHtml(v.text)}</p>`; });
+    content.innerHTML = h + '</div>';
+    content.scrollTop = 0;
+  }).catch(() => { content.innerHTML = '<p class="salmo-loading">Impossibile caricare il capitolo. Controlla la connessione.</p>'; });
+}
+
 // Apre il capitolo evidenziando il versetto citato
 function apriPasso(p) {
   const content = openBibleModal(`Carico ${escHtml(p.ref)}…`);
@@ -1261,6 +1299,8 @@ function apriPasso(p) {
 document.addEventListener('click', e => {
   const chip = e.target.closest('.psalm-chip[data-salmo]');
   if (chip) { apriSalmo(chip.dataset.salmo); return; }
+  const cap = e.target.closest('.cap-chip');
+  if (cap) { apriCapitolo(+cap.dataset.num, +cap.dataset.chap, `${cap.dataset.book} ${cap.dataset.chap}`); return; }
   const vref = e.target.closest('.vref');
   if (vref) {
     e.stopPropagation();
