@@ -588,6 +588,14 @@ h3 {
   vertical-align: super;
   margin-right: 0.4rem;
 }
+.salmo-verses p.hl {
+  background: var(--highlight);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  margin-left: -0.3rem;
+}
+.salmo-verses p.hl .vn { color: var(--accent); }
 
 .connection {
   margin-top: 0.8rem;

@@ -1173,9 +1173,33 @@ function showVersettoPopover(refEl) {
   pop.classList.add('show');
 }
 
-// Apre un Salmo intero in italiano (Bibbia Riveduta, via getbible.net)
-const SALMI_CACHE = {};
-function apriSalmo(n) {
+// ===== Lettore biblico in italiano (Bibbia Riveduta 1927, via getbible.net) =====
+// Mappa abbreviazioni italiane → numero del libro (canone protestante 1-66).
+const LIBRI_NUM = {
+  "Gen": 1, "Es": 2, "Lv": 3, "Nm": 4, "Dt": 5, "Gs": 6, "Gdc": 7, "Rt": 8,
+  "1 Sam": 9, "2 Sam": 10, "1 Re": 11, "2 Re": 12, "1 Cr": 13, "2 Cr": 14,
+  "Esd": 15, "Ne": 16, "Est": 17, "Gb": 18, "Sal": 19, "Pr": 20, "Qo": 21,
+  "Ec": 21, "Ct": 22, "Is": 23, "Ger": 24, "Lam": 25, "Ez": 26, "Dn": 27,
+  "Os": 28, "Gl": 29, "Am": 30, "Abd": 31, "Gn": 32, "Mi": 33, "Na": 34,
+  "Ab": 35, "Sof": 36, "Ag": 37, "Zc": 38, "Ml": 39,
+  "Mt": 40, "Mc": 41, "Lc": 42, "Gv": 43, "At": 44, "Rm": 45,
+  "1 Cor": 46, "2 Cor": 47, "Gal": 48, "Ef": 49, "Fil": 50, "Col": 51,
+  "1 Ts": 52, "2 Ts": 53, "1 Tm": 54, "2 Tm": 55, "Tt": 56, "Fm": 57,
+  "Eb": 58, "Gc": 59, "1 Pt": 60, "2 Pt": 61, "1 Gv": 62, "2 Gv": 63,
+  "3 Gv": 64, "Gd": 65, "Ap": 66
+};
+const CHAP_CACHE = {};
+
+function parseRef(ref) {
+  const m = String(ref).match(/^(.+?)\s+(\d+),(\d+)(?:-(\d+))?$/);
+  if (!m) return null;
+  const book = m[1].trim();
+  const num = LIBRI_NUM[book];
+  if (!num) return null;
+  return { ref, book, num, chap: +m[2], v1: +m[3], v2: m[4] ? +m[4] : +m[3] };
+}
+
+function openBibleModal(loadingLabel) {
   let overlay = document.getElementById('salmo-overlay');
   if (!overlay) {
     overlay = document.createElement('div');
@@ -1185,25 +1209,46 @@ function apriSalmo(n) {
     document.body.appendChild(overlay);
   }
   overlay.innerHTML = '<div class="salmo-modal"><button class="salmo-close" type="button" aria-label="Chiudi">×</button>'
-    + `<div class="salmo-content"><p class="salmo-loading">Carico il Salmo ${n}…</p></div></div>`;
+    + `<div class="salmo-content"><p class="salmo-loading">${loadingLabel}</p></div></div>`;
   overlay.classList.add('show');
   overlay.querySelector('.salmo-close').addEventListener('click', () => overlay.classList.remove('show'));
-  const content = overlay.querySelector('.salmo-content');
+  return overlay.querySelector('.salmo-content');
+}
 
-  const render = data => {
+function fetchChapterIT(num, chap) {
+  const key = num + '/' + chap;
+  if (CHAP_CACHE[key]) return Promise.resolve(CHAP_CACHE[key]);
+  return fetch(`https://api.getbible.net/v2/riveduta/${num}/${chap}.json`)
+    .then(r => r.json()).then(d => { CHAP_CACHE[key] = d; return d; });
+}
+
+// Apre un Salmo intero
+function apriSalmo(n) {
+  const content = openBibleModal(`Carico il Salmo ${n}…`);
+  fetchChapterIT(19, n).then(data => {
     let h = '<div class="salmo-step">Salmi · Bibbia Riveduta (1927)</div>'
       + `<h3 class="salmo-title">Salmo ${n}</h3><div class="salmo-verses">`;
     (data.verses || []).forEach(v => { h += `<p><span class="vn">${v.verse}</span>${escHtml(v.text)}</p>`; });
-    h += '</div>';
-    content.innerHTML = h;
+    content.innerHTML = h + '</div>';
     content.scrollTop = 0;
-  };
+  }).catch(() => { content.innerHTML = `<p class="salmo-loading">Impossibile caricare il Salmo ${n}. Controlla la connessione.</p>`; });
+}
 
-  if (SALMI_CACHE[n]) { render(SALMI_CACHE[n]); return; }
-  fetch(`https://api.getbible.net/v2/riveduta/19/${n}.json`)
-    .then(r => r.json())
-    .then(d => { SALMI_CACHE[n] = d; render(d); })
-    .catch(() => { content.innerHTML = `<p class="salmo-loading">Impossibile caricare il Salmo ${n}. Controlla la connessione e riprova.</p>`; });
+// Apre il capitolo evidenziando il versetto citato
+function apriPasso(p) {
+  const content = openBibleModal(`Carico ${escHtml(p.ref)}…`);
+  fetchChapterIT(p.num, p.chap).then(data => {
+    let h = `<div class="salmo-step">${escHtml(p.ref)} · Bibbia Riveduta (1927)</div>`
+      + `<h3 class="salmo-title">${escHtml(data.name || (p.book + ' ' + p.chap))}</h3><div class="salmo-verses">`;
+    (data.verses || []).forEach(v => {
+      const hl = (v.verse >= p.v1 && v.verse <= p.v2);
+      h += `<p${hl ? ' class="hl"' : ''}${v.verse === p.v1 ? ' data-first="1"' : ''}><span class="vn">${v.verse}</span>${escHtml(v.text)}</p>`;
+    });
+    content.innerHTML = h + '</div>';
+    const first = content.querySelector('[data-first="1"]');
+    if (first) first.scrollIntoView({ block: 'center' });
+    else content.scrollTop = 0;
+  }).catch(() => { content.innerHTML = `<p class="salmo-loading">Impossibile caricare ${escHtml(p.ref)}. Controlla la connessione.</p>`; });
 }
 
 // Carte interattive "tocca per scoprire" + versetti + salmi cliccabili (event delegation)
@@ -1211,7 +1256,13 @@ document.addEventListener('click', e => {
   const chip = e.target.closest('.psalm-chip[data-salmo]');
   if (chip) { apriSalmo(chip.dataset.salmo); return; }
   const vref = e.target.closest('.vref');
-  if (vref) { e.stopPropagation(); showVersettoPopover(vref); return; }
+  if (vref) {
+    e.stopPropagation();
+    const p = parseRef(vref.dataset.ref);
+    if (p) apriPasso(p);             // testo reale in italiano (capitolo con versetto evidenziato)
+    else showVersettoPopover(vref);  // fallback (es. deuterocanonici non presenti nella Riveduta)
+    return;
+  }
   const card = e.target.closest('.word-card');
   if (card) card.classList.toggle('revealed');
 });
