@@ -1578,6 +1578,7 @@ renderPreferiti();
 renderDomande();
 if (typeof renderProfeti === 'function') { renderProfeti('profeti'); linkVersettiPanel('profeti'); }
 if (typeof renderMisteri === 'function') { renderMisteri('misteri'); linkVersettiPanel('misteri'); }
+if (typeof renderDavide === 'function') renderDavide('davide');
 linkVersettiPanel('gesu');
 linkVersettiPanel('domande');
 renderBibbia();
