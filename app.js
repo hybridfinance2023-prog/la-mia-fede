@@ -1580,6 +1580,7 @@ if (typeof renderProfeti === 'function') { renderProfeti('profeti'); linkVersett
 if (typeof renderMisteri === 'function') { renderMisteri('misteri'); linkVersettiPanel('misteri'); }
 if (typeof renderDavide === 'function') renderDavide('davide');
 if (typeof renderMessiaTempio === 'function') renderMessiaTempio('tempio');
+if (typeof renderVideoStudi === 'function') renderVideoStudi('video');
 linkVersettiPanel('gesu');
 linkVersettiPanel('domande');
 renderBibbia();

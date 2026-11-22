@@ -28,6 +28,7 @@
     <button class="tab" data-tab="gesu" role="tab">Studio di Gesù</button>
     <button class="tab" data-tab="davide" role="tab">Davide</button>
     <button class="tab" data-tab="tempio" role="tab">Il Messia nel Tempio</button>
+    <button class="tab" data-tab="video" role="tab">Dai video</button>
     <button class="tab" data-tab="esplora" role="tab">Esplora</button>
     <button class="tab" data-tab="diario" role="tab">Diario</button>
     <button class="tab" data-tab="preferiti" role="tab">Preferiti</button>
@@ -45,6 +46,7 @@
     <section id="gesu" class="panel"></section>
     <section id="davide" class="panel"></section>
     <section id="tempio" class="panel"></section>
+    <section id="video" class="panel"></section>
     <section id="esplora" class="panel"></section>
     <section id="diario" class="panel"></section>
     <section id="preferiti" class="panel"></section>
@@ -52,13 +54,13 @@
   </main>
 
   <footer class="site-footer">
-    <small>Uso personale · Fonti: Bibbia CEI, Catechismo della Chiesa Cattolica · <strong>build&nbsp;16</strong></small>
+    <small>Uso personale · Fonti: Bibbia CEI, Catechismo della Chiesa Cattolica · <strong>build&nbsp;17</strong></small>
   </footer>
 
   <script>
     // Carica gli script in ordine, sempre freschi (evita cache stantia in sviluppo)
     (function () {
-      var files = ['data.js', 'teaching.js', 'percorso.js', 'sapienziali.js', 'genealogia.js', 'domande.js', 'domande-extra.js', 'profeti.js', 'diffusione-capitali.js', 'studio/studio-data.js', 'studio-gesu-extra.js', 'misteri.js', 'versetti.js', 'davide.js', 'messia-tempio.js', 'app.js'];
+      var files = ['data.js', 'teaching.js', 'percorso.js', 'sapienziali.js', 'genealogia.js', 'domande.js', 'domande-extra.js', 'profeti.js', 'diffusione-capitali.js', 'studio/studio-data.js', 'studio-gesu-extra.js', 'misteri.js', 'versetti.js', 'davide.js', 'messia-tempio.js', 'video-studi.js', 'app.js'];
       var v = Date.now();
       (function next(i) {
         if (i >= files.length) return;
