@@ -145,6 +145,278 @@ const VIDEO_STUDI = [
         `
       }
     ]
+  },
+
+  // -----------------------------------------------------------
+  {
+    id: "attacchi-satana",
+    titolo: "Perché Satana attacca quando sei più vicino a Dio",
+    sottotitolo: "La paura come arma del nemico",
+    autore: "Sam Shamoun",
+    canale: "More Sam Shamoun",
+    url: "https://youtu.be/p4gMqyVi_Fw",
+    titoloOriginale: "Satan Attacks Believers When They're Closest to God... Here's why",
+    durata: "14 min",
+    lingua: "inglese (tradotto e rielaborato)",
+    tagline: "Quando la tua fede è più forte, per il nemico diventi una minaccia. La sua arma preferita è la paura, perché ti distoglie lo sguardo da Gesù. La risposta non è fermarsi, ma avvicinarsi ancora di più a Dio.",
+    facts: [
+      { k: "Domanda", v: "«Perché gli attacchi arrivano proprio quando sono più vicina a Dio?»" },
+      { k: "Passi chiave", v: "2 Tm 1,7-12 · Gc 4,7-8 · Mt 14,22-33" },
+      { k: "Tesi", v: "La paura paralizza e allontana da Cristo: è la strategia del nemico" },
+      { k: "Simbolo", v: "Pietro che cammina sulle acque e affonda quando guarda il vento" },
+      { k: "Formato", v: "Risposta alla domanda di una giovane in diretta" }
+    ],
+    sezioni: [
+      {
+        id: "minaccia",
+        title: "Sei una minaccia per il nemico",
+        subtitle: "La domanda e la risposta",
+        html: `
+          <p>Una giovane racconta: «Mi sembra che gli attacchi arrivino proprio quando il mio rapporto con Dio è più forte, quando leggo costantemente la Bibbia e prego». Shamoun risponde: <strong>hai già risposto da sola</strong>.</p>
+          <p>Quando sei più vicino al Signore e la tua fede è forte, Satana ti vede come <strong>una minaccia</strong>. Il mondo spirituale è reale, e il nemico cerca di manipolarti e intimidirti.</p>
+          <p>Shamoun immagina il ragionamento del nemico: «Questa ragazza è pericolosa: più adora il Signore, più gli obbedisce, più si innamora di Lui, più distrugge i miei piani. Devo distrarla, perché si indebolisca nella fede e si allontani da Dio».</p>
+          <div class="keypoint">
+            <strong>Che cosa può e che cosa non può fare.</strong> Secondo Shamoun, il nemico non può costringere chi appartiene a Cristo a fare il male. Può però fare di tutto per <em>influenzarlo</em>: spingerlo a peccare, fargli perdere fiducia in Dio, distogliergli lo sguardo da Gesù. E quando riesce a distogliere lo sguardo da Cristo, ha vinto.
+          </div>
+        `
+      },
+      {
+        id: "paura",
+        title: "La paura: l'arma preferita",
+        subtitle: "«Dio non ci ha dato uno spirito di timidezza»",
+        html: `
+          <p>La paura è una <strong>tattica di Satana</strong>. La paura paralizza, blocca, fa perdere la fiducia in Cristo. E se il nemico vede che funziona, continua a fare pressione: più hai paura, meno ti concentri su Dio; più ti concentri sulla paura, più ti allontani da Lui e ti indebolisci.</p>
+          <blockquote class="teaching-quote">«Dio infatti non ci ha dato uno spirito di timidezza, ma di forza, di carità e di prudenza» (2 Tm 1,7).</blockquote>
+          <p>Quindi, se qualcosa ti lascia nella paura anche dopo aver chiesto a Gesù di liberartene, <strong>non viene da Dio</strong>. Paolo prosegue (2 Tm 1,8-12): non vergognarti della testimonianza, soffri per il Vangelo con la forza di Dio, che ci ha salvati non per le nostre opere ma per la sua grazia. E conclude:</p>
+          <blockquote class="teaching-quote">«So infatti in chi ho posto la mia fede e sono convinto che egli è capace di custodire fino a quel giorno ciò che mi è stato affidato» (2 Tm 1,12).</blockquote>
+          <div class="keypoint">
+            <strong>L'atteggiamento del credente.</strong> «Ho affidato a Lui la mia vita e non ho dubbi su chi Egli sia: è onnipotente nel salvarmi». Satana sa che, se riesce a farti dubitare di questo e a farti avere paura, ti indebolisce e non hai più la forza di resistergli.
+          </div>
+        `
+      },
+      {
+        id: "due-motivi",
+        title: "I due motivi degli attacchi",
+        subtitle: "Il peccato oppure la santità",
+        html: `
+          <p>Shamoun distingue due ragioni per cui Dio può permettere un attacco del nemico:</p>
+          <ul>
+            <li><strong>Per il peccato.</strong> C'è un peccato nella tua vita e il Signore permette la prova per richiamare la tua attenzione e portarti al pentimento.</li>
+            <li><strong>Per la santità.</strong> Sei così vicino al Signore che il nemico prova a farti cadere da quella unione con Dio.</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Nota di approfondimento.</strong> Il secondo caso ha un grande esempio biblico: Giobbe, uomo «integro e retto», messo alla prova proprio per la sua giustizia (Gb 1,8-12). E san Pietro avverte: «Il vostro nemico, il diavolo, come leone ruggente va in giro cercando chi divorare. Resistetegli saldi nella fede» (1 Pt 5,8-9). Nulla però accade senza il permesso di Dio, che non permette prove oltre le nostre forze (1 Cor 10,13).
+          </div>
+        `
+      },
+      {
+        id: "resistete",
+        title: "Sottomettetevi a Dio, resistete al diavolo",
+        subtitle: "La strategia del credente",
+        html: `
+          <blockquote class="teaching-quote">«Sottomettetevi dunque a Dio; resistete al diavolo, ed egli fuggirà lontano da voi. Avvicinatevi a Dio ed egli si avvicinerà a voi. Peccatori, purificate le vostre mani; uomini dall'animo indeciso, santificate i vostri cuori» (Gc 4,7-8).</blockquote>
+          <p>Il nemico <strong>deve fuggire</strong> se ti sottometti a Dio, perché lo Spirito Santo che è in te ti dà la forza di vincerlo. Ma il modo per vincere è duplice: <em>sottomettersi</em> a Dio e <em>resistere</em> al diavolo.</p>
+          <p>Più adori, lodi, canti, studi la Scrittura e la vivi, più diventi forte e più facilmente gli resisti. Per questo il nemico diventa disperato e prova la carta della paura: perché tu passi meno tempo alla presenza di Dio e più tempo concentrato sui problemi.</p>
+        `
+      },
+      {
+        id: "sulle-acque",
+        title: "Pietro sulle acque",
+        subtitle: "Ogni miracolo rivela una verità spirituale",
+        html: `
+          <p>I discepoli attraversano il lago di notte, con vento e onde. Alla quarta veglia Gesù viene verso di loro camminando sul mare. Non lo riconoscono: «È un fantasma!», e gridano per la paura (Mt 14,25-26).</p>
+          <blockquote class="teaching-quote">«Coraggio, sono io, non abbiate paura!» (Mt 14,27).</blockquote>
+          <div class="keypoint">
+            <strong>«Io sono».</strong> In greco Gesù non dice semplicemente «sono io», ma <em>egō eimi</em>, «Io sono»: l'eco del nome divino rivelato a Mosè (Es 3,14) e delle parole del Signore: «Ora vedete che io, io lo sono, e nessun altro è dio accanto a me» (Dt 32,39; cf. Is 43,10). Camminando sulle acque, Gesù si mostra come il Dio dell'Antico Testamento, Signore del vento e del mare.
+          </div>
+          <p>Pietro chiede: «Signore, se sei tu, comandami di venire verso di te sulle acque». Gesù risponde: «Vieni!». Pietro cammina… ma <strong>vedendo che il vento era forte, si impaurì</strong> e cominciò ad affondare (Mt 14,28-30).</p>
+          <div class="keypoint">
+            <strong>Simbolismo.</strong> Dio non compie miracoli per spettacolo: ogni miracolo fisico rivela una verità spirituale. Pietro affonda quando <em>distoglie lo sguardo da Gesù</em> e guarda vento e onde: le tempeste della vita. Se fissi le tempeste, la tua fede affonda; se fissi Gesù, cammini sopra di esse.
+          </div>
+          <p>Un ascoltatore suggerisce in diretta un versetto in sintonia: «La sua mente è salda; tu gli assicurerai la pace, pace perché in te ha fiducia» (Is 26,3).</p>
+        `
+      },
+      {
+        id: "salvami",
+        title: "«Signore, salvami!»",
+        subtitle: "La misericordia di Gesù",
+        html: `
+          <p>Mentre affonda, Pietro grida: «Signore, salvami!». E subito Gesù tende la mano, lo afferra e gli dice: «Uomo di poca fede, perché hai dubitato?» (Mt 14,30-31).</p>
+          <p>Il senso, spiega Shamoun: «Non vedi che cammino sulle acque? Io sono il Dio che governa le tempeste della tua vita, vento e onde mi obbediscono. Perché hai guardato la tempesta invece di guardare me?».</p>
+          <div class="keypoint">
+            <strong>La compassione di Cristo.</strong> Pietro stava perdendo la fede, eppure appena grida di nuovo verso il Signore, Gesù lo salva. Non c'è caduta da cui un grido sincero non possa essere ascoltato.
+          </div>
+          <p>Quando salgono sulla barca, il vento cessa. E quelli che erano sulla barca <strong>si prostrarono davanti a lui</strong>, dicendo: «Davvero tu sei Figlio di Dio!» (Mt 14,32-33). La tempesta finisce in adorazione.</p>
+        `
+      },
+      {
+        id: "non-fermarti",
+        title: "Non fermarti: intensifica",
+        subtitle: "Il caso concreto della paralisi nel sonno",
+        html: `
+          <p>La giovane racconta di episodi notturni in cui vorrebbe parlare ma sente la lingua «legata»: la cosiddetta <strong>paralisi nel sonno</strong>. Dal punto di vista medico è un fenomeno noto; lei però la sente anche come un attacco spirituale.</p>
+          <p>Il consiglio di Shamoun è netto: <strong>non smettere</strong> quello che stai facendo, <strong>fallo ancora di più</strong>. Se il nemico vede che l'attacco funziona — preghi meno, leggi meno la Bibbia, obbedisci meno — continuerà, anzi aumenterà l'intensità. Se vede che non funziona, smetterà.</p>
+          <ul>
+            <li>Prega di più, nel nome di Gesù.</li>
+            <li>Adora, canta, leggi la Scrittura di più.</li>
+            <li>Obbedisci di più e servi di più gli altri.</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Nota di prudenza.</strong> La Chiesa insegna a distinguere con discernimento ciò che è naturale da ciò che è spirituale: per disturbi del sonno è giusto consultare anche un medico. Sul piano spirituale, i mezzi ordinari sono la preghiera, i <strong>sacramenti</strong> (confessione ed Eucaristia), i sacramentali e il dialogo con un sacerdote; i casi straordinari si affidano a un esorcista autorizzato dal vescovo (CCC 1673).
+          </div>
+        `
+      },
+      {
+        id: "sintesi",
+        title: "Sintesi",
+        subtitle: "Gli occhi fissi su Gesù",
+        html: `
+          <ul>
+            <li><strong>Gli attacchi nei momenti più alti</strong> non sono un caso: sei diventato una minaccia per il regno delle tenebre.</li>
+            <li><strong>La paura è l'arma del nemico</strong>: Dio non ci ha dato uno spirito di timidezza ma di forza (2 Tm 1,7).</li>
+            <li><strong>Sottomettiti a Dio e resisti</strong>: il diavolo fuggirà (Gc 4,7).</li>
+            <li><strong>Guarda Gesù, non la tempesta</strong>: Pietro affonda solo quando distoglie lo sguardo.</li>
+            <li><strong>Grida a Lui</strong>: anche quando affondi, la sua mano ti afferra.</li>
+            <li><strong>Non arretrare</strong>: rispondi all'attacco con più preghiera e più amore.</li>
+          </ul>
+          <blockquote class="teaching-quote">«Tenendo fisso lo sguardo su Gesù, colui che dà origine alla fede e la porta a compimento» (Eb 12,2).</blockquote>
+          <div class="keypoint">
+            <strong>Per la preghiera.</strong> Qual è oggi il «vento forte» che ti fa distogliere lo sguardo da Gesù? Prova a dirgli, come Pietro: «Signore, salvami», e a fare un passo in più nella preghiera proprio lì dove senti più resistenza.
+          </div>
+        `
+      }
+    ]
+  },
+
+  // -----------------------------------------------------------
+  {
+    id: "caduta-satana",
+    titolo: "La caduta di Satana: che cosa dice davvero la Bibbia",
+    sottotitolo: "Isaia 14, Ezechiele 28 e l'unico testo esplicito",
+    autore: "Sam Shamoun",
+    canale: "More Sam Shamoun",
+    url: "https://youtu.be/m-03BR4f6CM",
+    titoloOriginale: "The TRUTH About Satan's Fall No one Tells you",
+    durata: "15 min",
+    lingua: "inglese (tradotto e rielaborato)",
+    tagline: "I testi più citati sulla caduta di Satana parlano, alla lettera, di due re umani. Possono riferirsi a Satana solo in modo indiretto. L'unico passo esplicito dice una cosa sola: fu condannato per la superbia. Del resto, Dio non ha voluto rivelarci di più.",
+    facts: [
+      { k: "Testi discussi", v: "Is 14 (re di Babilonia) · Ez 28 (re di Tiro)" },
+      { k: "Chiave", v: "Dietro i re umani agiscono potenze spirituali (Dn 10; Ef 6,12)" },
+      { k: "Sorpresa", v: "La Settanta legge Ez 28 in modo diverso dal testo ebraico" },
+      { k: "Testo esplicito", v: "1 Tm 3,6: la condanna del diavolo per superbia" },
+      { k: "Principio", v: "Le cose nascoste appartengono al Signore (Dt 29,28)" }
+    ],
+    sezioni: [
+      {
+        id: "contesto",
+        title: "Isaia 14 ed Ezechiele 28 nel loro contesto",
+        subtitle: "Due re che si credevano dèi",
+        html: `
+          <p>Quando si parla della caduta di Satana si citano quasi sempre due capitoli: <strong>Isaia 14</strong> («Come mai sei caduto dal cielo, astro del mattino…») ed <strong>Ezechiele 28</strong> (il «cherubino» cacciato dal monte di Dio).</p>
+          <p>La conclusione di Shamoun: letti nel loro contesto, questi capitoli <strong>non parlano direttamente di Satana</strong>. Parlano del <strong>re di Babilonia</strong> (Is 14,4) e del <strong>re di Tiro</strong> (Ez 28,2.12) e della rovina che Dio manderà loro per la loro arroganza: si credevano dèi sulla terra, figli degli dèi dei loro pantheon, capaci di opporsi al vero Dio impunemente.</p>
+          <p>Dio li descrive con linguaggio grandioso <strong>per deriderli</strong>: «Vi credete dèi? Siete solo vermi, e morirete» (cf. Is 14,11; Ez 28,9).</p>
+        `
+      },
+      {
+        id: "spiriti-dietro",
+        title: "Spiriti che agiscono dietro i re",
+        subtitle: "Perché si possono applicare a Satana",
+        html: `
+          <p>Questo significa che non c'entrano nulla con Satana? No. Quello che si dice di questi re <strong>può essere applicato per estensione</strong> allo spirito malvagio che agiva in loro e attraverso di loro.</p>
+          <p>La Bibbia infatti insegna che dietro i governanti umani agiscono <strong>esseri spirituali</strong>. L'angelo dice a Daniele: «Fin dal primo giorno la tua preghiera è stata ascoltata… ma il principe del regno di Persia mi si è opposto per ventun giorni» (Dn 10,12-13; cf. Dn 10,20-21). Quale re umano potrebbe trattenere un angelo potente e invisibile? Non il re, ma <strong>lo spirito che agiva attraverso di lui</strong>.</p>
+          <blockquote class="teaching-quote">«La nostra battaglia infatti non è contro la carne e il sangue, ma contro i Principati e le Potenze, contro i dominatori di questo mondo tenebroso, contro gli spiriti del male che abitano nelle regioni celesti» (Ef 6,12).</blockquote>
+          <div class="keypoint">
+            <strong>Simbolismo.</strong> Paolo dice ai cristiani: non fissatevi sull'uomo che avete davanti, su Cesare. La vera battaglia è contro le potenze delle tenebre che usano gli uomini come strumenti. Se si disarmano quelle potenze, anche gli uomini vengono liberati.
+          </div>
+        `
+      },
+      {
+        id: "settanta",
+        title: "Ezechiele 28: ebraico e Settanta",
+        subtitle: "«Eri un cherubino» oppure «eri con il cherubino»?",
+        html: `
+          <p>C'è un dettaglio che pochi conoscono. Nel <strong>testo ebraico</strong> il re di Tiro è chiamato egli stesso cherubino:</p>
+          <blockquote class="teaching-quote">«Eri come un cherubino ad ali spiegate a difesa; io ti posi sul monte santo di Dio… perciò ti ho scacciato dal monte di Dio e ti ho fatto perire, cherubino protettore» (Ez 28,14.16).</blockquote>
+          <p>Nella <strong>Settanta</strong>, l'antica traduzione greca dell'Antico Testamento usata dalla Chiesa ortodossa e spesso citata dagli Apostoli, il testo dice invece: dal giorno in cui fosti creato <strong>eri con il cherubino</strong>… e <strong>il cherubino ti ha cacciato</strong> di mezzo alle pietre di fuoco.</p>
+          <p>La differenza è enorme. Nella versione greca il re <strong>non è un cherubino</strong>: è un uomo che stava con il cherubino nel <strong>giardino di Dio</strong>, l'Eden (Ez 28,13). È paragonato ad <strong>Adamo</strong>: creato perfetto e sapiente, si corruppe e fu cacciato, e i cherubini furono posti a custodia dell'albero della vita (Gn 3,24).</p>
+          <div class="keypoint">
+            <strong>Simbolismo.</strong> Il re di Tiro, come Adamo, si credeva perfetto e sapiente, ma si corruppe con l'orgoglio e fu cacciato dal giardino di Dio. Secondo Shamoun, la Settanta si basa su una forma del testo ebraico più antica.
+          </div>
+        `
+      },
+      {
+        id: "supposizioni",
+        title: "Troppe supposizioni",
+        subtitle: "Perché non si può essere dogmatici",
+        html: `
+          <p>Per usare questi testi come racconto dell'origine e della caduta di Satana bisogna fare molte supposizioni:</p>
+          <ul>
+            <li>che, pur parlando di re umani, i testi si riferiscano allo <strong>spirito</strong> che agiva in loro;</li>
+            <li>che dietro il re di Babilonia e dietro il re di Tiro agisse <strong>lo stesso spirito</strong>, e non due demoni diversi;</li>
+            <li>che il testo giusto di Ez 28 sia quello ebraico («eri un cherubino») e non quello greco («eri con il cherubino»).</li>
+          </ul>
+          <p>Si può leggere Satana in questi testi in modo <strong>implicito</strong>, non esplicito. Se ti convince, va bene, dice Shamoun, ma non si può essere dogmatici: chi legge criticamente potrà obiettare «io non lo vedo», e avrà un argomento valido.</p>
+        `
+      },
+      {
+        id: "esplicito",
+        title: "L'unico testo esplicito: 1 Timoteo 3,6",
+        subtitle: "La superbia",
+        html: `
+          <p>Tra le qualità richieste a chi guida la comunità, Paolo scrive:</p>
+          <blockquote class="teaching-quote">«Inoltre non sia un convertito da poco tempo, perché, accecato dall'orgoglio, non cada nella stessa condanna del diavolo» (1 Tm 3,6).</blockquote>
+          <p>Il testo si può leggere in due modi: il diavolo userà l'orgoglio per far condannare quella persona; oppure, <strong>come il diavolo fu condannato per la superbia</strong>, così sarà condannato anche chi si insuperbisce. Molte traduzioni (come la NIV e la New King James) scelgono la seconda lettura: «la stessa condanna del diavolo».</p>
+          <div class="keypoint">
+            <strong>Ciò che la Scrittura dice chiaramente.</strong> Il diavolo fu condannato per <strong>orgoglio e superbia</strong>: si rovinò da solo diventando arrogante. Da qui un avvertimento per ogni cristiano: custodisci il cuore dalla superbia, soprattutto quando ricevi onore e responsabilità.
+          </div>
+          <p>Ma di che cosa si insuperbì esattamente? Secondo Shamoun, nessun libro della Scrittura, deuterocanonici compresi, lo spiega.</p>
+        `
+      },
+      {
+        id: "cose-nascoste",
+        title: "Le cose nascoste appartengono a Dio",
+        subtitle: "Non aggiungere, non togliere",
+        html: `
+          <blockquote class="teaching-quote">«Le cose occulte appartengono al Signore, nostro Dio, ma le cose rivelate appartengono a noi e ai nostri figli, per sempre, perché pratichiamo tutte le parole di questa legge» (Dt 29,28; 29,29 in altre traduzioni).</blockquote>
+          <p>Quello che Dio non ha rivelato appartiene a Lui. A noi spetta ciò che ha rivelato: comprenderlo con la forza dello Spirito, annunciarlo e viverlo. Se Dio avesse voluto farci sapere di più sulla caduta di Satana, ce lo avrebbe rivelato. <strong>Non aggiungere alla sua Parola e non toglierle nulla</strong>.</p>
+        `
+      },
+      {
+        id: "chiesa",
+        title: "Che cosa insegna la Chiesa",
+        subtitle: "Integrazione cattolica",
+        html: `
+          <p>L'approccio prudente di Shamoun sui singoli testi è condiviso da molti biblisti. Il Magistero cattolico però insegna con chiarezza alcuni punti, fondati sull'insieme della Scrittura e della Tradizione:</p>
+          <ul>
+            <li><strong>Satana fu creato buono</strong>: «Il diavolo e gli altri demoni sono stati creati da Dio naturalmente buoni, ma da se stessi si sono trasformati in malvagi» (Concilio Lateranense IV, 1215; CCC 391).</li>
+            <li><strong>La caduta fu una libera scelta</strong>, un rifiuto radicale e irrevocabile di Dio e del suo Regno (CCC 392-393).</li>
+            <li>Altri testi della Scrittura parlano del diavolo e della sua caduta: «Per l'invidia del diavolo la morte è entrata nel mondo» (Sap 2,24); egli «non stava saldo nella verità» ed è «menzognero e padre della menzogna» (Gv 8,44); Gesù dice: «Vedevo Satana cadere dal cielo come una folgore» (Lc 10,18); Dio «non risparmiò gli angeli che avevano peccato» (2 Pt 2,4); la guerra in cielo e il grande drago «precipitato sulla terra» (Ap 12,7-9).</li>
+            <li>Molti Padri della Chiesa (come Origene, Agostino, Gregorio Magno) hanno letto Isaia 14 ed Ezechiele 28 anche in senso spirituale, riferito a Satana: da qui il nome «Lucifero» («portatore di luce», la traduzione latina di «astro del mattino» in Is 14,12).</li>
+          </ul>
+          <div class="keypoint">
+            <strong>In sintesi.</strong> Il senso letterale di Is 14 ed Ez 28 riguarda due re. La lettura «spirituale» riferita a Satana è antica e venerabile, ma non va presentata come l'unico significato. La fede della Chiesa sulla caduta del diavolo poggia sull'insieme della Rivelazione. Per approfondire Lucifero e il male, vedi anche la tab <strong>Misteri</strong>.
+          </div>
+        `
+      },
+      {
+        id: "sintesi",
+        title: "Sintesi",
+        subtitle: "Che cosa possiamo dire con certezza",
+        html: `
+          <ul>
+            <li><strong>Is 14 ed Ez 28</strong> parlano alla lettera dei re di Babilonia e di Tiro, derisi da Dio per la loro arroganza.</li>
+            <li><strong>Dietro i re agiscono potenze spirituali</strong> (Dn 10; Ef 6,12): per questo i testi si possono applicare indirettamente a Satana.</li>
+            <li><strong>La Settanta</strong> legge Ez 28 diversamente: il re «era con il cherubino», come Adamo nell'Eden.</li>
+            <li><strong>Il testo esplicito</strong> è 1 Tm 3,6: la condanna del diavolo fu dovuta alla superbia.</li>
+            <li><strong>Il resto è nascosto</strong> e appartiene a Dio (Dt 29,28).</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Per la preghiera.</strong> La prima caduta nel mondo spirituale nasce dalla superbia. Chiedi al Signore il dono dell'umiltà: «Dio resiste ai superbi, agli umili invece dà la sua grazia» (1 Pt 5,5).
+          </div>
+        `
+      }
+    ]
   }
 ];
 
