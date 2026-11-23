@@ -1581,6 +1581,7 @@ if (typeof renderMisteri === 'function') { renderMisteri('misteri'); linkVersett
 if (typeof renderDavide === 'function') renderDavide('davide');
 if (typeof renderMessiaTempio === 'function') renderMessiaTempio('tempio');
 if (typeof renderVideoStudi === 'function') renderVideoStudi('video');
+if (typeof renderApprofondimenti === 'function') renderApprofondimenti('approfondimenti');
 linkVersettiPanel('gesu');
 linkVersettiPanel('domande');
 renderBibbia();

@@ -29,6 +29,7 @@
     <button class="tab" data-tab="davide" role="tab">Davide</button>
     <button class="tab" data-tab="tempio" role="tab">Il Messia nel Tempio</button>
     <button class="tab" data-tab="video" role="tab">Dai video</button>
+    <button class="tab" data-tab="approfondimenti" role="tab">Approfondimenti</button>
     <button class="tab" data-tab="esplora" role="tab">Esplora</button>
     <button class="tab" data-tab="diario" role="tab">Diario</button>
     <button class="tab" data-tab="preferiti" role="tab">Preferiti</button>
@@ -47,6 +48,7 @@
     <section id="davide" class="panel"></section>
     <section id="tempio" class="panel"></section>
     <section id="video" class="panel"></section>
+    <section id="approfondimenti" class="panel"></section>
     <section id="esplora" class="panel"></section>
     <section id="diario" class="panel"></section>
     <section id="preferiti" class="panel"></section>
@@ -54,13 +56,13 @@
   </main>
 
   <footer class="site-footer">
-    <small>Uso personale · Fonti: Bibbia CEI, Catechismo della Chiesa Cattolica · <strong>build&nbsp;19</strong></small>
+    <small>Uso personale · Fonti: Bibbia CEI, Catechismo della Chiesa Cattolica · <strong>build&nbsp;20</strong></small>
   </footer>
 
   <script>
     // Carica gli script in ordine, sempre freschi (evita cache stantia in sviluppo)
     (function () {
-      var files = ['data.js', 'teaching.js', 'percorso.js', 'sapienziali.js', 'genealogia.js', 'domande.js', 'domande-extra.js', 'profeti.js', 'diffusione-capitali.js', 'studio/studio-data.js', 'studio-gesu-extra.js', 'misteri.js', 'versetti.js', 'davide.js', 'messia-tempio.js', 'video-studi.js', 'app.js'];
+      var files = ['data.js', 'teaching.js', 'percorso.js', 'sapienziali.js', 'genealogia.js', 'domande.js', 'domande-extra.js', 'profeti.js', 'diffusione-capitali.js', 'studio/studio-data.js', 'studio-gesu-extra.js', 'misteri.js', 'versetti.js', 'davide.js', 'messia-tempio.js', 'video-studi.js', 'pdf-studi/alleanze.js', 'pdf-studi/promesse-collegate.js', 'pdf-studi/via-stretta.js', 'pdf-studi/matteo-6-33.js', 'pdf-studi/bibbia-66-libri.js', 'pdf-studi/isaia-66-capitoli.js', 'pdf-studi/ruach.js', 'pdf-studi/preghiere-di-gesu.js', 'pdf-studi/regno-di-dio.js', 'pdf-studi/talenti.js', 'pdf-studi/imparare-dal-nemico.js', 'approfondimenti.js', 'app.js'];
       var v = Date.now();
       (function next(i) {
         if (i >= files.length) return;

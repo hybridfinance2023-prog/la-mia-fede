@@ -339,7 +339,7 @@ const VIDEO_STUDI = [
           <p>C'è un dettaglio che pochi conoscono. Nel <strong>testo ebraico</strong> il re di Tiro è chiamato egli stesso cherubino:</p>
           <blockquote class="teaching-quote">«Eri come un cherubino ad ali spiegate a difesa; io ti posi sul monte santo di Dio… perciò ti ho scacciato dal monte di Dio e ti ho fatto perire, cherubino protettore» (Ez 28,14.16).</blockquote>
           <p>Nella <strong>Settanta</strong>, l'antica traduzione greca dell'Antico Testamento usata dalla Chiesa ortodossa e spesso citata dagli Apostoli, il testo dice invece: dal giorno in cui fosti creato <strong>eri con il cherubino</strong>… e <strong>il cherubino ti ha cacciato</strong> di mezzo alle pietre di fuoco.</p>
-          <p>La differenza è enorme. Nella versione greca il re <strong>non è un cherubino</strong>: è un uomo che stava con il cherubino nel <strong>giardino di Dio</strong>, l'Eden (Ez 28,13). È paragonato ad <strong>Adamo</strong>: creato perfetto e sapiente, si corruppe e fu cacciato, e i cherubini furono posti a custodia dell'albero della vita (Gn 3,24).</p>
+          <p>La differenza è enorme. Nella versione greca il re <strong>non è un cherubino</strong>: è un uomo che stava con il cherubino nel <strong>giardino di Dio</strong>, l'Eden (Ez 28,13). È paragonato ad <strong>Adamo</strong>: creato perfetto e sapiente, si corruppe e fu cacciato, e i cherubini furono posti a custodia dell'albero della vita (Gen 3,24).</p>
           <div class="keypoint">
             <strong>Simbolismo.</strong> Il re di Tiro, come Adamo, si credeva perfetto e sapiente, ma si corruppe con l'orgoglio e fu cacciato dal giardino di Dio. Secondo Shamoun, la Settanta si basa su una forma del testo ebraico più antica.
           </div>
@@ -547,7 +547,7 @@ const VIDEO_STUDI = [
     tagline: "Dietro il tradimento di Giuda c'era Satana. Ma è Gesù a concedergli di agire, ed è proprio sulla croce, al «luogo del cranio», che il serpente viene schiacciato.",
     facts: [
       { k: "Domanda", v: "Chi ha voluto la morte di Gesù?" },
-      { k: "Passi chiave", v: "Lc 22,1-5 · Gv 13,2.27 · Gv 12,1-6 · Gn 3,15 · Gv 19,17" },
+      { k: "Passi chiave", v: "Lc 22,1-5 · Gv 13,2.27 · Gv 12,1-6 · Gen 3,15 · Gv 19,17" },
       { k: "Dettaglio", v: "Il «tu» di Gv 13,27 è singolare" },
       { k: "Avvertimento", v: "Il peccato non confessato apre la porta al nemico" },
       { k: "Simbolo", v: "La croce piantata sul Golgota, «luogo del cranio»" }
@@ -599,7 +599,7 @@ const VIDEO_STUDI = [
         title: "Il serpente morde il calcagno",
         subtitle: "La prima promessa della Bibbia",
         html: `
-          <blockquote class="teaching-quote">«Io porrò inimicizia fra te e la donna, fra la tua stirpe e la sua stirpe: questa ti schiaccerà la testa e tu le insidierai il calcagno» (Gn 3,15).</blockquote>
+          <blockquote class="teaching-quote">«Io porrò inimicizia fra te e la donna, fra la tua stirpe e la sua stirpe: questa ti schiaccerà la testa e tu le insidierai il calcagno» (Gen 3,15).</blockquote>
           <p>Il morso di un serpente velenoso al calcagno è mortale. Ma quando il serpente si avvicina tanto da mordere, chi viene morso può <strong>schiacciargli la testa</strong> con quello stesso piede.</p>
           <div class="keypoint">
             <strong>Simbolismo.</strong> Il Signore lascia che Satana si avvicini abbastanza da colpirlo al calcagno (la croce) perché proprio in quel momento gli schiaccia la testa. Il colpo con cui il nemico pensava di vincere diventa la sua sconfitta. Questo versetto è chiamato «Protovangelo»: il primo annuncio della salvezza.
@@ -614,7 +614,7 @@ const VIDEO_STUDI = [
           <blockquote class="teaching-quote">«Ed egli, portando la croce, si avviò verso il luogo detto del Cranio, in ebraico Gòlgota» (Gv 19,17).</blockquote>
           <p>Shamoun chiede: è un caso che il colle della crocifissione fosse chiamato «cranio», forse per la sua forma di testa? Da lontano, la croce piantata nel terreno sarebbe sembrata un palo conficcato in una testa.</p>
           <div class="keypoint">
-            <strong>Simbolismo.</strong> Il serpente ha colpito la stirpe della donna con i chiodi, ma la croce è diventata lo strumento con cui Cristo gli ha schiacciato la testa sotto il piede. La croce sul «Cranio» è l'immagine visibile di Gn 3,15 che si compie.
+            <strong>Simbolismo.</strong> Il serpente ha colpito la stirpe della donna con i chiodi, ma la croce è diventata lo strumento con cui Cristo gli ha schiacciato la testa sotto il piede. La croce sul «Cranio» è l'immagine visibile di Gen 3,15 che si compie.
           </div>
           <div class="keypoint">
             <strong>Nota di approfondimento.</strong> La forma del colle è un'ipotesi: il nome potrebbe venire anche dal fatto che era un luogo di esecuzioni. C'è poi un'antica tradizione, già in Origene, secondo cui sul Golgota sarebbe stato sepolto <strong>il cranio di Adamo</strong>. Per questo nelle icone e nei crocifissi si vede spesso un teschio ai piedi della croce: il sangue del nuovo Adamo scende a lavare il primo Adamo.
@@ -631,7 +631,7 @@ const VIDEO_STUDI = [
             <li><strong>«Fallo presto»</strong>: un «tu» singolare, rivolto forse a Satana stesso, che può agire solo con il permesso di Dio.</li>
             <li><strong>Gesù dà la vita liberamente</strong>: è Lui il Signore della Passione (Gv 10,18).</li>
             <li><strong>Il peccato nascosto apre la porta</strong> al nemico: Giuda rubava e non si è mai pentito (Gv 12,6).</li>
-            <li><strong>Il calcagno ferito e la testa schiacciata</strong>: la croce sul «Cranio» compie Gn 3,15.</li>
+            <li><strong>Il calcagno ferito e la testa schiacciata</strong>: la croce sul «Cranio» compie Gen 3,15.</li>
           </ul>
           <div class="keypoint">
             <strong>Per la preghiera.</strong> C'è una «porta aperta» nella tua vita, un peccato tenuto nascosto? Portalo alla luce nella Confessione: è lì che il serpente perde la presa.
