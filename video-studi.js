@@ -417,6 +417,228 @@ const VIDEO_STUDI = [
         `
       }
     ]
+  },
+
+  // -----------------------------------------------------------
+  {
+    id: "peccare-in-cielo",
+    titolo: "Si potrà peccare in Paradiso?",
+    sottotitolo: "Se Adamo ed Eva peccarono nell'Eden, che cosa ci garantisce il cielo?",
+    autore: "Sam Shamoun",
+    canale: "The Best of Shamoun",
+    url: "https://youtu.be/NiUxbpPJJ7I",
+    titoloOriginale: "Can We Still Sin in Heaven If Adam and Eve Sinned in Paradise?",
+    durata: "14 min",
+    lingua: "inglese (tradotto e rielaborato)",
+    tagline: "Dio ci ha creati liberi perché l'amore vero non si può imporre. Chi in questa vita sceglie di amarlo riceverà un dono: in cielo sarà trasformato e non potrà più né desiderare né commettere il peccato.",
+    facts: [
+      { k: "Domanda", v: "Se nell'Eden c'era il libero arbitrio e si è peccato, in cielo potremo ricadere?" },
+      { k: "Risposta", v: "No: saremo trasformati, e non vorremo né potremo più peccare" },
+      { k: "Chiave", v: "«Dio è amore» (1 Gv 4,8.16) e l'amore non costringe" },
+      { k: "Tema collegato", v: "I «gradi» di gloria nel Regno (Mt 5,19; 11,11; 20,20-28)" },
+      { k: "Formato", v: "Domanda di un ascoltatore in diretta" }
+    ],
+    sezioni: [
+      {
+        id: "domanda",
+        title: "La domanda",
+        subtitle: "Libertà nell'Eden, libertà in cielo?",
+        html: `
+          <p>Un ascoltatore chiede: Adamo ed Eva vivevano in un mondo senza peccato, eppure hanno peccato perché erano liberi. In cielo avremo ancora il libero arbitrio? Se sì, potremmo rovinare tutto di nuovo e ricominciare da capo questo «inferno». Se no, saremo meno liberi?</p>
+          <p>La risposta di Shamoun: <strong>è proprio per questo che saremo trasformati</strong>. Dio cambierà i credenti in modo tale che non desidereranno più, né potranno più desiderare, di andare contro di Lui.</p>
+        `
+      },
+      {
+        id: "perfetti-mutabili",
+        title: "Creati perfetti, ma capaci di corrompersi",
+        subtitle: "Come il peccato è potuto entrare nel mondo",
+        html: `
+          <p>Ciò che esce direttamente dalle mani di Dio è <strong>senza difetti</strong>. Ma Dio ha creato le creature razionali con la <em>possibilità</em> di corrompersi, se scelgono di non seguire la sua via.</p>
+          <p>Shamoun usa un paragone imperfetto: un'auto esce dalla fabbrica perfetta (motore, trasmissione, gomme), ma con l'uso sbagliato e l'abuso si consuma, arrugginisce, si rompe. La possibilità di guastarsi fa parte del suo progetto.</p>
+          <p>Lo stesso vale per tutti gli esseri capaci di ragionare, desiderare e scegliere: gli <strong>uomini</strong> e anche gli <strong>angeli</strong>. Tutti hanno ricevuto la possibilità di scegliere contro Dio, con la conseguenza di corrompere se stessi.</p>
+        `
+      },
+      {
+        id: "amore-libero",
+        title: "Perché Dio ci ha dato la libertà",
+        subtitle: "L'amore non si impone",
+        html: `
+          <blockquote class="teaching-quote">«Dio è amore; chi rimane nell'amore rimane in Dio e Dio rimane in lui» (1 Gv 4,16; cf. 1 Gv 4,8).</blockquote>
+          <p>Dal modo in cui Dio ama impariamo due cose sull'amore:</p>
+          <ul>
+            <li><strong>L'amore si dona all'altro</strong> e desidera il bene dell'amato, non il proprio vantaggio. Amare qualcuno solo perché ci torna utile non è amore: è egoismo.</li>
+            <li><strong>L'amore non si impone</strong>. Costringere qualcuno ad amare è oppressione, tirannia, schiavitù.</li>
+          </ul>
+          <p>Anche l'esperienza lo conferma: più si cerca di forzare qualcuno ad amarci, più quella persona si allontana. Pensa a una donna finita in una relazione con un uomo violento: obbedisce per paura e per sopravvivere, non per amore.</p>
+          <div class="keypoint">
+            <strong>Il cuore della risposta.</strong> Come potrebbe Dio creare esseri capaci di ricevere amore e di ricambiarlo davvero senza dare loro la possibilità di scegliere? Sarebbe impossibile: senza libertà non c'è amore vero, ma solo paura. Per questo, dice Shamoun, «siamo nel caos in cui siamo».
+          </div>
+        `
+      },
+      {
+        id: "ricompensa",
+        title: "La ricompensa: non poter più peccare",
+        subtitle: "La trasformazione dei salvati",
+        html: `
+          <p>Ecco il premio di Dio per chi, in questa vita, sceglie liberamente di amarlo: chi resta fedele, lotta contro la propria carne e, quando cade, <strong>riconosce il peccato senza nasconderlo né giustificarlo</strong>.</p>
+          <p>A costoro Dio dice: «Nel mondo che verrà ti trasformerò. Non avrai più né il desiderio né la possibilità di peccare, così non dovremo ripetere tutto questo».</p>
+          <div class="keypoint">
+            <strong>Nota di approfondimento: le quattro condizioni di sant'Agostino.</strong> La tradizione esprime questa verità con una formula di sant'Agostino:
+            <ul>
+              <li>Adamo prima della caduta: <em>posse non peccare</em> (poteva non peccare);</li>
+              <li>l'uomo decaduto: <em>non posse non peccare</em> (non riesce a non peccare da solo);</li>
+              <li>l'uomo redento dalla grazia: <em>posse non peccare</em> (con la grazia può di nuovo non peccare);</li>
+              <li>i beati in cielo: <strong><em>non posse peccare</em></strong> (non possono più peccare).</li>
+            </ul>
+            Non è una libertà più piccola, ma più grande: vedendo Dio «faccia a faccia» (1 Cor 13,12), la volontà è ormai unita per sempre al Bene, e non lo vuole più lasciare. È la «visione beatifica» (CCC 1023-1029).
+          </div>
+          <p>San Paolo descrive questa trasformazione: «Bisogna infatti che questo corpo corruttibile si vesta d'incorruttibilità e questo corpo mortale si vesta d'immortalità» (1 Cor 15,53). E san Giovanni: «Sappiamo però che quando egli si sarà manifestato, noi saremo simili a lui, perché lo vedremo così come egli è» (1 Gv 3,2).</p>
+        `
+      },
+      {
+        id: "gradi",
+        title: "Ci saranno «gradi» in cielo?",
+        subtitle: "Più grandi e più piccoli nel Regno",
+        html: `
+          <p>L'ascoltatore chiede anche dei «ranghi» in cielo. Shamoun risponde onestamente: <strong>che ci siano lo dice la Scrittura; come funzioneranno, non lo so</strong>.</p>
+          <p>Da un lato, tutti i salvati saranno trasformati, gloriosi, immortali, incapaci di peccare; tutti regneranno con Cristo, e nessuno sarà padrone dei fratelli. Dall'altro, la Bibbia parla chiaramente di grandi e piccoli nel Regno:</p>
+          <ul>
+            <li>«Chi trasgredirà uno solo di questi minimi precetti… sarà considerato minimo nel regno dei cieli. Chi invece li osserverà e li insegnerà, sarà considerato grande» (Mt 5,19).</li>
+            <li>«Fra i nati da donna non è sorto alcuno più grande di Giovanni il Battista; ma il più piccolo nel regno dei cieli è più grande di lui» (Mt 11,11).</li>
+            <li>La madre dei figli di Zebedeo chiede i primi posti; Gesù risponde: «Chi vuole diventare grande tra voi, sarà vostro servitore» (Mt 20,20-28).</li>
+            <li>L'opera di ciascuno sarà messa alla prova dal fuoco e riceverà la ricompensa (1 Cor 3,10-15; cf. 1 Cor 4,3-5; Rm 14,9-12; 2 Cor 5,10).</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Cosa insegna la Chiesa.</strong> Il Concilio di Firenze (1439) insegna che i beati vedono Dio «chi più perfettamente, chi meno, secondo la diversità dei meriti». Eppure ciascuno è pienamente felice: un bicchiere e una brocca possono essere entrambi colmi, anche se contengono quantità diverse. Nessuna invidia: la grandezza degli altri è gioia per tutti.
+          </div>
+        `
+      },
+      {
+        id: "sintesi",
+        title: "Sintesi",
+        subtitle: "Liberi per amare, trasformati per sempre",
+        html: `
+          <ul>
+            <li><strong>Dio ha creato esseri liberi</strong> perché l'amore vero non si può imporre (1 Gv 4,8).</li>
+            <li><strong>La libertà comportava il rischio</strong> della corruzione: così il peccato è entrato nel mondo.</li>
+            <li><strong>Chi sceglie di amare Dio</strong>, lotta contro il peccato e lo confessa, riceverà un dono.</li>
+            <li><strong>In cielo non potremo più peccare</strong>: non per costrizione, ma perché la volontà sarà unita per sempre al Bene.</li>
+            <li><strong>Ci saranno gradi di gloria</strong>, ma ognuno sarà pienamente felice, e il più grande sarà chi ha servito.</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Per la preghiera.</strong> Oggi la tua libertà è il luogo dove puoi dire a Dio «ti amo». Prova a trasformare una lotta contro un peccato in un atto d'amore: «Signore, non voglio ferirti».
+          </div>
+        `
+      }
+    ]
+  },
+
+  // -----------------------------------------------------------
+  {
+    id: "giuda-satana",
+    titolo: "All'Ultima Cena Gesù parlava a Giuda o a Satana?",
+    sottotitolo: "«Quello che vuoi fare, fallo presto»",
+    autore: "Sam Shamoun",
+    canale: "The Best of Shamoun",
+    url: "https://youtu.be/WS47nsEXes8",
+    titoloOriginale: "Was Jesus Talking to Judas or to Satan at the Last Supper?",
+    durata: "12 min",
+    lingua: "inglese (tradotto e rielaborato)",
+    tagline: "Dietro il tradimento di Giuda c'era Satana. Ma è Gesù a concedergli di agire, ed è proprio sulla croce, al «luogo del cranio», che il serpente viene schiacciato.",
+    facts: [
+      { k: "Domanda", v: "Chi ha voluto la morte di Gesù?" },
+      { k: "Passi chiave", v: "Lc 22,1-5 · Gv 13,2.27 · Gv 12,1-6 · Gn 3,15 · Gv 19,17" },
+      { k: "Dettaglio", v: "Il «tu» di Gv 13,27 è singolare" },
+      { k: "Avvertimento", v: "Il peccato non confessato apre la porta al nemico" },
+      { k: "Simbolo", v: "La croce piantata sul Golgota, «luogo del cranio»" }
+    ],
+    sezioni: [
+      {
+        id: "chi",
+        title: "Chi ha voluto la morte di Gesù?",
+        subtitle: "Il nemico dietro il tradimento",
+        html: `
+          <blockquote class="teaching-quote">«Si avvicinava la festa degli Azzimi, chiamata Pasqua, e i capi dei sacerdoti e gli scribi cercavano in che modo toglierlo di mezzo, ma temevano il popolo. Allora Satana entrò in Giuda, detto Iscariota, che era uno dei Dodici» (Lc 22,1-3).</blockquote>
+          <p>Giuda va dai capi dei sacerdoti e si accorda con loro per consegnare Gesù; essi, contenti, gli promettono del denaro (Lc 22,4-5). E Giovanni aggiunge: «Durante la cena, quando il diavolo aveva già messo in cuore a Giuda, figlio di Simone Iscariota, di tradirlo…» (Gv 13,2).</p>
+          <div class="keypoint">
+            <strong>La risposta.</strong> Dietro i sacerdoti e dietro Giuda c'era <strong>il diavolo</strong>. Satana pensava di porre fine a Cristo uccidendolo sulla croce: è il serpente che morde il calcagno.
+          </div>
+        `
+      },
+      {
+        id: "fallo-presto",
+        title: "«Quello che vuoi fare, fallo presto»",
+        subtitle: "A chi era rivolta quella frase?",
+        html: `
+          <blockquote class="teaching-quote">«Allora, dopo il boccone, Satana entrò in lui. Gli disse dunque Gesù: "Quello che vuoi fare, fallo presto"» (Gv 13,27).</blockquote>
+          <p>Shamoun fa notare che nel greco il pronome è <strong>singolare</strong>: «tu». Le traduzioni inglesi antiche come la King James e la Douay-Rheims lo mostrano bene, perché distinguono <em>thou/thee/thy</em> (singolare) da <em>you/ye</em> (plurale). Anche in italiano la distinzione tra «tu» e «voi» si conserva.</p>
+          <p>Ma se Satana era appena entrato in Giuda e lo controllava, a chi parlava Gesù? A Giuda, o <strong>a Satana</strong>? È come se Gesù dicesse: «Va', fai quello che vuoi: <em>io ti permetto</em> di mettermi a morte». Perché Satana non può muoversi né agire se Dio non lo permette (cf. Gb 1,12).</p>
+          <div class="keypoint">
+            <strong>Gesù resta il Signore della sua Passione.</strong> Anche nell'ora delle tenebre, nulla sfugge a Cristo: «Nessuno me la toglie: io la do da me stesso» (Gv 10,18). Non è Satana a decidere, ma Gesù che offre liberamente la sua vita.
+          </div>
+        `
+      },
+      {
+        id: "avvertimento",
+        title: "Un avvertimento: il peccato non confessato",
+        subtitle: "Come il nemico prese possesso di Giuda",
+        html: `
+          <p>Giuda era stato con Cristo: lo aveva visto, abbracciato, toccato, e aveva perfino compiuto miracoli nel suo nome. Eppure era un <strong>ladro</strong>:</p>
+          <blockquote class="teaching-quote">«Questo egli disse non perché gli importasse dei poveri, ma perché era un ladro e, siccome teneva la cassa, prendeva quello che vi mettevano dentro» (Gv 12,6).</blockquote>
+          <p>L'episodio è quello di Betania: Maria unge i piedi di Gesù con un profumo di nardo prezioso, e Giuda protesta che si poteva venderlo per trecento denari, quasi un anno di salario, e darli ai poveri (Gv 12,1-5). Gesù lo sapeva, eppure non lo smascherò davanti a tutti.</p>
+          <div class="keypoint">
+            <strong>Il principio.</strong> Il peccato non confessato e non pentito è come <strong>una porta lasciata aperta</strong>. Più si pecca e meno ci si pente, più il nemico guadagna potere, fino a impadronirsi della persona, come accadde a Giuda. San Paolo avverte: «Non date spazio al diavolo» (Ef 4,27).
+          </div>
+          <div class="keypoint">
+            <strong>La via d'uscita.</strong> La differenza tra Giuda e Pietro, che pure rinnegò Gesù, non sta nella gravità della colpa ma nel ritorno: Pietro pianse e tornò (Lc 22,61-62). Per il cattolico la porta si chiude soprattutto con la <strong>Confessione</strong>: «Se confessiamo i nostri peccati, egli è fedele e giusto tanto da perdonarci» (1 Gv 1,9).
+          </div>
+        `
+      },
+      {
+        id: "calcagno",
+        title: "Il serpente morde il calcagno",
+        subtitle: "La prima promessa della Bibbia",
+        html: `
+          <blockquote class="teaching-quote">«Io porrò inimicizia fra te e la donna, fra la tua stirpe e la sua stirpe: questa ti schiaccerà la testa e tu le insidierai il calcagno» (Gn 3,15).</blockquote>
+          <p>Il morso di un serpente velenoso al calcagno è mortale. Ma quando il serpente si avvicina tanto da mordere, chi viene morso può <strong>schiacciargli la testa</strong> con quello stesso piede.</p>
+          <div class="keypoint">
+            <strong>Simbolismo.</strong> Il Signore lascia che Satana si avvicini abbastanza da colpirlo al calcagno (la croce) perché proprio in quel momento gli schiaccia la testa. Il colpo con cui il nemico pensava di vincere diventa la sua sconfitta. Questo versetto è chiamato «Protovangelo»: il primo annuncio della salvezza.
+          </div>
+        `
+      },
+      {
+        id: "golgota",
+        title: "Il luogo del cranio",
+        subtitle: "La croce piantata nella «testa»",
+        html: `
+          <blockquote class="teaching-quote">«Ed egli, portando la croce, si avviò verso il luogo detto del Cranio, in ebraico Gòlgota» (Gv 19,17).</blockquote>
+          <p>Shamoun chiede: è un caso che il colle della crocifissione fosse chiamato «cranio», forse per la sua forma di testa? Da lontano, la croce piantata nel terreno sarebbe sembrata un palo conficcato in una testa.</p>
+          <div class="keypoint">
+            <strong>Simbolismo.</strong> Il serpente ha colpito la stirpe della donna con i chiodi, ma la croce è diventata lo strumento con cui Cristo gli ha schiacciato la testa sotto il piede. La croce sul «Cranio» è l'immagine visibile di Gn 3,15 che si compie.
+          </div>
+          <div class="keypoint">
+            <strong>Nota di approfondimento.</strong> La forma del colle è un'ipotesi: il nome potrebbe venire anche dal fatto che era un luogo di esecuzioni. C'è poi un'antica tradizione, già in Origene, secondo cui sul Golgota sarebbe stato sepolto <strong>il cranio di Adamo</strong>. Per questo nelle icone e nei crocifissi si vede spesso un teschio ai piedi della croce: il sangue del nuovo Adamo scende a lavare il primo Adamo.
+          </div>
+        `
+      },
+      {
+        id: "sintesi",
+        title: "Sintesi",
+        subtitle: "Il serpente schiacciato",
+        html: `
+          <ul>
+            <li><strong>Dietro il tradimento</strong> c'era Satana, entrato in Giuda (Lc 22,3; Gv 13,2.27).</li>
+            <li><strong>«Fallo presto»</strong>: un «tu» singolare, rivolto forse a Satana stesso, che può agire solo con il permesso di Dio.</li>
+            <li><strong>Gesù dà la vita liberamente</strong>: è Lui il Signore della Passione (Gv 10,18).</li>
+            <li><strong>Il peccato nascosto apre la porta</strong> al nemico: Giuda rubava e non si è mai pentito (Gv 12,6).</li>
+            <li><strong>Il calcagno ferito e la testa schiacciata</strong>: la croce sul «Cranio» compie Gn 3,15.</li>
+          </ul>
+          <div class="keypoint">
+            <strong>Per la preghiera.</strong> C'è una «porta aperta» nella tua vita, un peccato tenuto nascosto? Portalo alla luce nella Confessione: è lì che il serpente perde la presa.
+          </div>
+        `
+      }
+    ]
   }
 ];
 
